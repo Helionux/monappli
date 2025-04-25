@@ -227,6 +227,27 @@ body{
   padding: 25px;
 }
 
+.partenaire-title{
+  display: flex;
+  gap: 20px;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.messages textarea {
+  background-color: #000000;
+  width: 525px;
+  height: 200px;
+  color: #fefefe;
+  padding: 15px;
+  font-size: 1.25rem;
+  resize: none;
+}
 
 .input-group{
   display: flex;

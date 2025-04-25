@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './navBar';
-import Banner from './banner';
-import Post from './Post';
-import Footers from './Footers';
-import Descrip from './Descrip';
-import { Partenaire } from './Contact';
+import Navbar from './components/navBar';
+import Banner from './components/banner';
+import Post from './components/Post';
+import Footers from './components/Footers';
+import Descrip from './components/Descrip';
+import { Partenaire } from './components/Contact';
 
 function App() {
   return (
