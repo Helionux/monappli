@@ -1,6 +1,6 @@
 export const Partenaire = () => {
     return ( 
-        <div className="partenaire">
+        <form className="partenaire">
             <div className="input-group">
                 <input className="input" required type="text"></input>
                 <label className="label">Nom</label>
@@ -24,7 +24,7 @@ export const Partenaire = () => {
                 <label className="label">Mot de passe</label>  
             </div>
             <button>Envoyer</button>
-        </div>
+        </form>
      );
 }
 

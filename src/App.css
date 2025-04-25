@@ -218,26 +218,15 @@ body{
 }
 
 .partenaire{
-  border: #692a11 2px solid;
+  margin: 25px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
-  /* padding: 25px; */
+  padding: 25px;
 }
 
-.formulaire{
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-  background-color: #181818;
-  width: 25%;
-  border-radius: 35px;
-}
 
 .input-group{
   display: flex;
@@ -277,6 +266,17 @@ body{
   background-color: #000000;
   padding-inline: 0.3rem;
   color: #e7e7e7;
+}
+
+.partenaire button {
+  width: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color:#692a11;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .footers {
