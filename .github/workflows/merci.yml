@@ -41,4 +41,7 @@ jobs:
                 title: `Notification: Nouveau commit de @${commit.author.username || commit.author.name}`,
                 body: `@Helionux, un nouveau commit vient d'être poussé par @${commit.author.username || commit.author.name} ! \n\nMessage du commit : ${commit.message}\n\nLien du commit : ${commit.url}`
               });
-            }
+            };
+            
+    permissions:
+            issues: write
