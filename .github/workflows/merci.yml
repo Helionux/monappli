@@ -12,6 +12,9 @@ jobs:
   pr-thanks-and-alert:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
     steps:
       - name: Remercier le contributeur et avertir Helionux sur PR
         uses: actions/github-script@v7
@@ -28,6 +31,8 @@ jobs:
   push-alert:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Avertir Helionux à chaque commit sur main/develop
         uses: actions/github-script@v7
@@ -39,9 +44,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title: `Notification: Nouveau commit de @${commit.author.username || commit.author.name}`,
-                body: `@Helionux, un nouveau commit vient d'être poussé par @${commit.author.username || commit.author.name} ! \n\nMessage du commit : ${commit.message}\n\nLien du commit : ${commit.url}`
+                body: `@Helionux, un nouveau commit vient d'être poussé par @${commit.author.username || commit.author.name} ! \n\nMessage du commit : ${commit.message}\n\nLien du commit : ${commit.url}`,
               });
-            };
-            
-    permissions:
-            issues: write
+            }
