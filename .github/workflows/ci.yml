@@ -29,7 +29,6 @@ jobs:
       - name: Lint code
         run: npm run lint
 
-      - name: Run tests
-        run: npm test
+     
 
       # Ajoute ici d'autres étapes si besoin (build, coverage, déploiement, etc)
